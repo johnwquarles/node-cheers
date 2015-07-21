@@ -38,13 +38,6 @@ describe('CLI', function() {
     })
   });
 
-  it('should work even if the name is put in in all caps', function (done) {
-    cp.execFile('./cheers.js', ["MARI"], function (err, stdout) {
-      stdout.should.equal('Give me an M!\nGive me an A!\nGive me an R!\nGive me an I!\n')
-      done();
-    })
-  });
-
   it('should work with nonenglish/extended characters', function (done) {
     cp.execFile('./cheers.js', ["中小野田"], function (err, stdout) {
       stdout.should.equal('Give me a 中!\nGive me a 小!\nGive me a 野!\nGive me a 田!\n')
