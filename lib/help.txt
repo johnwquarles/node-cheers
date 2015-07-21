@@ -1,0 +1,7 @@
+
+Welcome to the NodeJS cheers app!
+You can enter a name, and the app will issue
+a most cheerful cheer that's been tested by tests!
+
+type: "node cheers.js name"
+or: "node cheers.js name anothername somanynames"
