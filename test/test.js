@@ -39,8 +39,8 @@ describe('CLI', function() {
   });
 
   it('should work with nonenglish/extended characters', function (done) {
-    cp.execFile('./cheers.js', ["中小野田"], function (err, stdout) {
-      stdout.should.equal('Give me a 中!\nGive me a 小!\nGive me a 野!\nGive me a 田!\n')
+    cp.execFile('./cheers.js', ["中高田馬場"], function (err, stdout) {
+      stdout.should.equal('Give me a 中!\nGive me a 高!\nGive me a 田!\nGive me a 馬!\nGive me a 場!\n')
       done();
     })
   });
